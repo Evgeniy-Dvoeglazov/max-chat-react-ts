@@ -7,7 +7,7 @@
 - React + TypeScript
 - Vite
 - Eslint
-- GREEN-API (методы `sendMessage`, `receiveNotification`, `getChats`, `getContactInfo`, `checkAccount`)
+- GREEN-API (методы `sendMessage`, `receiveNotification`, `deleteNotification`, `getStateInstance`, `getContactInfo`, `checkAccount`)
 
 ## Возможности
 
