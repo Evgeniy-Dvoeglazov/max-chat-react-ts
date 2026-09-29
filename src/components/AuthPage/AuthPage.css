@@ -1,0 +1,93 @@
+.authPage {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  background: #f4f5f7;
+}
+
+.authPage__form {
+  max-height: fit-content;
+  max-width: 420px;
+  padding: 40px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  box-shadow: 0 18px 50px rgba(15, 23, 42, 0.08);
+}
+
+.authPage__logo {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  border-radius: 16px;
+  background: #007aff;
+  color: #fff;
+  font-weight: 800;
+}
+
+.authPage__form h1 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.authPage__subtitle {
+  margin: 8px 0 28px;
+  color: #6b7280;
+}
+.authPage__form label {
+  display: block;
+  margin-top: 18px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.authPage__form input {
+  width: 100%;
+  margin-top: 8px;
+  padding: 12px 14px;
+  border: 1px solid #d9dde5;
+  border-radius: 10px;
+  outline: none;
+}
+
+.authPage__form input::placeholder {
+  color: #acacac;
+}
+
+.authPage__password {
+  position: relative;
+}
+
+.authPage__password button {
+  position: absolute;
+  right: 0px;
+  top: 7px;
+  border: 0;
+  background: none;
+  color: #6b7280;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.authPage__submitButton {
+  width: 100%;
+  margin-top: 26px;
+  padding: 13px 16px;
+  border: 0;
+  border-radius: 10px;
+  background: #007aff;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.authPage__submitButton:disabled {
+  pointer-events: none;
+  opacity: 0.4;
+}

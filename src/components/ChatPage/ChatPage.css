@@ -1,0 +1,15 @@
+.chatPage {
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  background: #f8f9fb;
+}
+
+.chatPage__placeholder {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9ca3af;
+  font-size: 15px;
+}

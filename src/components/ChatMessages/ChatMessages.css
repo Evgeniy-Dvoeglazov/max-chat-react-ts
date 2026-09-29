@@ -1,0 +1,40 @@
+.chatMessages {
+  min-width: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.chatMessages__header {
+  height: 76px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 22px;
+  border-bottom: 1px solid #e5e7eb;
+  background: #fff;
+}
+
+.chatMessages__back {
+  width: 30px;
+  height: 30px;
+  background: none;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.chatMessages__back:hover {
+  background: #007aff14;
+}
+
+.chatMessages__header div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.chatMessages__header div span {
+  font-size: 12px;
+  color: #9ca3af;
+}
