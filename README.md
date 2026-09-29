@@ -2,6 +2,8 @@
 
 Веб-клиент для обмена текстовыми сообщениями в MAX через [GREEN-API](https://green-api.com/max).
 
+**Демо:** [max-chat-react-ts-xi.vercel.app](https://max-chat-react-ts-xi.vercel.app)
+
 ## Стек
 
 - React + TypeScript
