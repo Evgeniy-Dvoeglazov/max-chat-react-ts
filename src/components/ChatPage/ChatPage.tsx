@@ -28,7 +28,7 @@ export const ChatPage = ({
 
   return (
     <main className='chatPage'>
-      <ChatList chats={chats} activeId={activeChatId} onSelect={onSelectChat} onNewChat={onNewChat} />
+      <ChatList chats={chats} activeChatId={activeChatId} onSelect={onSelectChat} onNewChat={onNewChat} />
       {activeChat ? (
         <ChatMessages
           messages={activeChat.messages}

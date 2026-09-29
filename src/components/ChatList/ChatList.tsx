@@ -6,14 +6,14 @@ import './ChatList.css';
 
 interface ChatListProps {
   chats: Chat[];
-  activeId: string;
+  activeChatId: string | null;
   onSelect: (id: string) => void;
   onNewChat: () => void;
 }
-export function ChatList({ chats, activeId, onSelect, onNewChat }: ChatListProps) {
+export function ChatList({ chats, activeChatId, onSelect, onNewChat }: ChatListProps) {
   return (
     // На мобильном при открытом чате список скрывается через класс chatList_hidden.
-    <aside className={`chatList ${activeId && 'chatList_hidden'}`}>
+    <aside className={`chatList ${activeChatId && 'chatList_hidden'}`}>
       <div className='chatList__header'>
         <h2>Чаты</h2>
         <button className='chatList__addButton' onClick={onNewChat} aria-label='Новый чат'>
@@ -24,7 +24,7 @@ export function ChatList({ chats, activeId, onSelect, onNewChat }: ChatListProps
         {chats.map((chat) => (
           <button
             key={chat.id}
-            className={`chatList__item ${chat.id === activeId ? 'chatList__item_active' : ''}`}
+            className={`chatList__item ${chat.id === activeChatId ? 'chatList__item_active' : ''}`}
             onClick={() => onSelect(chat.id)}
           >
             <Avatar src={chat.avatar} name={chat.title} />
